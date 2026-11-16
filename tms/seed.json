@@ -1,0 +1,525 @@
+{
+ "company": {
+  "name": "Ridgeline Freight",
+  "timezone": "America/Denver",
+  "equipment": [
+   "dry_van",
+   "reefer"
+  ],
+  "max_weight_lbs": 44000
+ },
+ "customers": [
+  {
+   "id": "C100",
+   "name": "Alpine Paper Co.",
+   "domains": [
+    "alpinepaper.example"
+   ],
+   "status": "active",
+   "contact": "Dana Whitfield"
+  },
+  {
+   "id": "C101",
+   "name": "Front Range Foods",
+   "domains": [
+    "frontrangefoods.example"
+   ],
+   "status": "active",
+   "contact": "Marco Ibarra"
+  },
+  {
+   "id": "C102",
+   "name": "Cascade Home Goods",
+   "domains": [
+    "cascadehome.example"
+   ],
+   "status": "active",
+   "contact": "Priya Nandakumar"
+  },
+  {
+   "id": "C103",
+   "name": "Mesa Building Supply",
+   "domains": [
+    "mesabuild.example"
+   ],
+   "status": "active",
+   "contact": "Hank Doyle"
+  },
+  {
+   "id": "C104",
+   "name": "Pikes Peak Beverage",
+   "domains": [
+    "ppbev.example",
+    "pikespeakbev.example"
+   ],
+   "status": "active",
+   "contact": "Lauren Cho"
+  },
+  {
+   "id": "C105",
+   "name": "Wasatch Outdoor",
+   "domains": [
+    "wasatchoutdoor.example"
+   ],
+   "status": "credit_hold",
+   "contact": "Brent Sorensen"
+  },
+  {
+   "id": "C106",
+   "name": "Prairie Pet Supply",
+   "domains": [
+    "prairiepet.example"
+   ],
+   "status": "active",
+   "contact": "Tessa Ruiz"
+  },
+  {
+   "id": "C107",
+   "name": "Sunbelt Plastics",
+   "domains": [
+    "sunbeltplastics.example"
+   ],
+   "status": "inactive",
+   "contact": "Ray Delgado"
+  }
+ ],
+ "facilities": [
+  {
+   "id": "F100",
+   "customer": "C100",
+   "name": "Alpine Paper Mill",
+   "address": "4400 Mill Rd",
+   "city": "Commerce City",
+   "state": "CO",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "06:00",
+    "close": "14:00"
+   }
+  },
+  {
+   "id": "F101",
+   "customer": "C100",
+   "name": "Alpine Paper DC",
+   "address": "1200 Logistics Pkwy",
+   "city": "Salt Lake City",
+   "state": "UT",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "07:00",
+    "close": "15:00"
+   }
+  },
+  {
+   "id": "F102",
+   "customer": "C100",
+   "name": "Peak Office Supply DC",
+   "address": "9800 W Kellogg Dr",
+   "city": "Wichita",
+   "state": "KS",
+   "timezone": "America/Chicago",
+   "default_hours": {
+    "open": "08:00",
+    "close": "16:00"
+   }
+  },
+  {
+   "id": "F110",
+   "customer": "C101",
+   "name": "Front Range Foods Plant",
+   "address": "310 Industrial Pkwy",
+   "city": "Greeley",
+   "state": "CO",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "05:00",
+    "close": "13:00"
+   }
+  },
+  {
+   "id": "F111",
+   "customer": "C101",
+   "name": "Mile High Grocers DC",
+   "address": "17000 E 32nd Ave",
+   "city": "Aurora",
+   "state": "CO",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "04:00",
+    "close": "12:00"
+   }
+  },
+  {
+   "id": "F112",
+   "customer": "C101",
+   "name": "Lone Star Market DC",
+   "address": "6100 Canyon Dr",
+   "city": "Amarillo",
+   "state": "TX",
+   "timezone": "America/Chicago",
+   "default_hours": {
+    "open": "06:00",
+    "close": "14:00"
+   }
+  },
+  {
+   "id": "F120",
+   "customer": "C102",
+   "name": "Cascade Home Goods DC",
+   "address": "2500 Santa Fe Dr",
+   "city": "Pueblo",
+   "state": "CO",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "07:00",
+    "close": "15:00"
+   }
+  },
+  {
+   "id": "F121",
+   "customer": "C102",
+   "name": "HomeNest Store Supply",
+   "address": "7701 Jefferson St NE",
+   "city": "Albuquerque",
+   "state": "NM",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "08:00",
+    "close": "16:00"
+   }
+  },
+  {
+   "id": "F122",
+   "customer": "C102",
+   "name": "HomeNest Store Supply",
+   "address": "4300 SW 29th St",
+   "city": "Oklahoma City",
+   "state": "OK",
+   "timezone": "America/Chicago",
+   "default_hours": {
+    "open": "08:00",
+    "close": "16:00"
+   }
+  },
+  {
+   "id": "F130",
+   "customer": "C103",
+   "name": "Mesa Building Supply Yard",
+   "address": "2150 River Rd",
+   "city": "Grand Junction",
+   "state": "CO",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "06:00",
+    "close": "14:00"
+   }
+  },
+  {
+   "id": "F131",
+   "customer": "C103",
+   "name": "Mesa Building Supply",
+   "address": "880 E Main St",
+   "city": "Farmington",
+   "state": "NM",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "07:00",
+    "close": "15:00"
+   }
+  },
+  {
+   "id": "F140",
+   "customer": "C104",
+   "name": "Pikes Peak Beverage Brewery",
+   "address": "55 Garden Way",
+   "city": "Colorado Springs",
+   "state": "CO",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "06:00",
+    "close": "14:00"
+   }
+  },
+  {
+   "id": "F141",
+   "customer": "C104",
+   "name": "Summit Distributors",
+   "address": "1800 Westland Rd",
+   "city": "Cheyenne",
+   "state": "WY",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "07:00",
+    "close": "15:00"
+   }
+  },
+  {
+   "id": "F142",
+   "customer": "C104",
+   "name": "Summit Distributors",
+   "address": "3200 Fairfax Trfy",
+   "city": "Kansas City",
+   "state": "KS",
+   "timezone": "America/Chicago",
+   "default_hours": {
+    "open": "07:00",
+    "close": "15:00"
+   }
+  },
+  {
+   "id": "F150",
+   "customer": "C105",
+   "name": "Wasatch Outdoor Warehouse",
+   "address": "2600 Wall Ave",
+   "city": "Ogden",
+   "state": "UT",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "07:00",
+    "close": "15:00"
+   }
+  },
+  {
+   "id": "F151",
+   "customer": "C105",
+   "name": "Trailhead Sports DC",
+   "address": "5500 W Franklin Rd",
+   "city": "Boise",
+   "state": "ID",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "06:00",
+    "close": "14:00"
+   }
+  },
+  {
+   "id": "F160",
+   "customer": "C106",
+   "name": "Prairie Pet Supply DC",
+   "address": "1400 N Ohio St",
+   "city": "Salina",
+   "state": "KS",
+   "timezone": "America/Chicago",
+   "default_hours": {
+    "open": "07:00",
+    "close": "15:00"
+   }
+  },
+  {
+   "id": "F161",
+   "customer": "C106",
+   "name": "Pawsome Retail DC",
+   "address": "4900 Joliet St",
+   "city": "Denver",
+   "state": "CO",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "06:00",
+    "close": "14:00"
+   }
+  },
+  {
+   "id": "F162",
+   "customer": "C106",
+   "name": "Pawsome Retail DC",
+   "address": "2250 S 43rd Ave",
+   "city": "Phoenix",
+   "state": "AZ",
+   "timezone": "America/Phoenix",
+   "default_hours": {
+    "open": "05:00",
+    "close": "13:00"
+   }
+  },
+  {
+   "id": "F170",
+   "customer": "C107",
+   "name": "Sunbelt Plastics Plant",
+   "address": "3900 E Valencia Rd",
+   "city": "Tucson",
+   "state": "AZ",
+   "timezone": "America/Phoenix",
+   "default_hours": {
+    "open": "06:00",
+    "close": "14:00"
+   }
+  },
+  {
+   "id": "F171",
+   "customer": "C107",
+   "name": "Border Packaging",
+   "address": "11500 Pellicano Dr",
+   "city": "El Paso",
+   "state": "TX",
+   "timezone": "America/Denver",
+   "default_hours": {
+    "open": "07:00",
+    "close": "15:00"
+   }
+  }
+ ],
+ "rates": [
+  {
+   "customer": "C100",
+   "pickup_facility": "F100",
+   "delivery_facility": "F101",
+   "equipment": "dry_van",
+   "rate_usd": 1850,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C100",
+   "pickup_facility": "F100",
+   "delivery_facility": "F102",
+   "equipment": "dry_van",
+   "rate_usd": 2150,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-11-15"
+  },
+  {
+   "customer": "C100",
+   "pickup_facility": "F100",
+   "delivery_facility": "F102",
+   "equipment": "dry_van",
+   "rate_usd": 2240,
+   "valid_from": "2026-11-16",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C100",
+   "pickup_facility": "F101",
+   "delivery_facility": "F102",
+   "equipment": "dry_van",
+   "rate_usd": 2900,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C101",
+   "pickup_facility": "F110",
+   "delivery_facility": "F111",
+   "equipment": "reefer",
+   "rate_usd": 650,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C101",
+   "pickup_facility": "F110",
+   "delivery_facility": "F112",
+   "equipment": "reefer",
+   "rate_usd": 2475,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C101",
+   "pickup_facility": "F110",
+   "delivery_facility": "F111",
+   "equipment": "dry_van",
+   "rate_usd": 575,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C102",
+   "pickup_facility": "F120",
+   "delivery_facility": "F121",
+   "equipment": "dry_van",
+   "rate_usd": 1525,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C102",
+   "pickup_facility": "F120",
+   "delivery_facility": "F122",
+   "equipment": "dry_van",
+   "rate_usd": 2050,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C103",
+   "pickup_facility": "F130",
+   "delivery_facility": "F131",
+   "equipment": "dry_van",
+   "rate_usd": 1400,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C104",
+   "pickup_facility": "F140",
+   "delivery_facility": "F141",
+   "equipment": "dry_van",
+   "rate_usd": 980,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C104",
+   "pickup_facility": "F140",
+   "delivery_facility": "F142",
+   "equipment": "dry_van",
+   "rate_usd": 2300,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C104",
+   "pickup_facility": "F140",
+   "delivery_facility": "F142",
+   "equipment": "reefer",
+   "rate_usd": 2650,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C105",
+   "pickup_facility": "F150",
+   "delivery_facility": "F151",
+   "equipment": "dry_van",
+   "rate_usd": 1650,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C106",
+   "pickup_facility": "F160",
+   "delivery_facility": "F161",
+   "equipment": "dry_van",
+   "rate_usd": 1975,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C106",
+   "pickup_facility": "F160",
+   "delivery_facility": "F162",
+   "equipment": "dry_van",
+   "rate_usd": 3150,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-11-15"
+  },
+  {
+   "customer": "C106",
+   "pickup_facility": "F160",
+   "delivery_facility": "F162",
+   "equipment": "dry_van",
+   "rate_usd": 3050,
+   "valid_from": "2026-11-16",
+   "valid_to": "2026-12-31"
+  },
+  {
+   "customer": "C107",
+   "pickup_facility": "F170",
+   "delivery_facility": "F171",
+   "equipment": "dry_van",
+   "rate_usd": 1250,
+   "valid_from": "2026-01-01",
+   "valid_to": "2026-12-31"
+  }
+ ]
+}
