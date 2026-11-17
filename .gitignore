@@ -4,3 +4,4 @@ __pycache__/
 *.py[cod]
 *-export.json
 !batch-export.json
+.cache/
